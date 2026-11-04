@@ -1,6 +1,7 @@
 +++
 title = "개인 포트폴리오 사이트 제작과 자동 배포"
 date = "2026-11-04"
+weight = 2
 description = "Hugo 테마와 GitHub Actions로 이 사이트를 만들고 자동 배포한 과정"
 +++
 
