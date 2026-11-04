@@ -16,3 +16,23 @@
     outline-offset: 4px;
   }
 }
+
+/* 키보드 사용자가 첫 Tab에서 메뉴를 건너뛰고 본문으로 갈 수 있게 한다. 초점을 받을 때만 보인다. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 200;
+  padding: 0.8rem 1.2rem;
+  background: #1f6f5c;
+  color: #ffffff;
+  border-radius: 0.4rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+#main-content:focus {
+  outline: none;
+}
