@@ -99,3 +99,19 @@ hugo new content projects/새-활동-이름.md --kind projects
 ```
 
 생성된 파일의 `draft = true`를 `false`로 바꿔야 사이트에 표시됩니다.
+
+## 배포하고 확인하기
+
+1. 파일을 고친 뒤 커밋하고 main에 push합니다.
+   ```powershell
+   git add 고친파일
+   git commit -m "변경 내용을 설명하는 메시지"
+   git push
+   ```
+2. 저장소의 [Actions 탭](https://github.com/jsjsbs7233/jsjsbs7233.github.io/actions)에서 **Deploy Hugo to GitHub Pages** 실행이 자동으로 시작되는지 확인합니다. `build`와 `deploy` 두 단계가 모두 초록색(✅)이면 배포 완료입니다(보통 1~3분).
+3. https://jsjsbs7233.github.io/ 를 열고 `Ctrl + Shift + R`(캐시 무시 새로고침)로 변경 내용이 반영됐는지 확인합니다.
+
+**실패했을 때**
+
+- Actions의 빨간 단계를 열어 오류 메시지를 확인하고, 위의 로컬 빌드 명령으로 같은 오류가 나는지 확인합니다.
+- 처음 설정할 때는 저장소 **Settings → Pages → Build and deployment → Source**가 **GitHub Actions**로 되어 있어야 합니다.
