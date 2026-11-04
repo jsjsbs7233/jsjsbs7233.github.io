@@ -48,3 +48,11 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* 키보드로 이동할 때 현재 초점이 있는 링크·버튼을 밝은/어두운 화면 모두에서 분명하게 보여 준다. */
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 0.2rem;
+}
