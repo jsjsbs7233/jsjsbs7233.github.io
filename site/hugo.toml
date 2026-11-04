@@ -186,21 +186,16 @@ type = "application/rss+xml"
 label = "한국어"
 
 [[languages.ko.menu.main]]
-name = "About"
+name = "소개"
 weight = 1
 url = "about/"
 
 [[languages.ko.menu.main]]
-name = "Blog"
+name = "활동"
 weight = 2
-url = "posts/"
-
-[[languages.ko.menu.main]]
-name = "Projects"
-weight = 3
 url = "projects/"
 
 [[languages.ko.menu.main]]
-name = "Contact me"
-weight = 5
+name = "연락처"
+weight = 3
 url = "contact/"
