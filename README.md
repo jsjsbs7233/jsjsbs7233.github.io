@@ -49,3 +49,29 @@ winget install --id Git.Git -e
 
 설치 후 새 터미널을 열고 `hugo version`, `py --version`, `git --version`으로 확인합니다.
 Windows에서는 `python` 대신 `py` 명령을 사용합니다.
+
+## 로컬에서 확인하기
+
+저장소를 내려받은 뒤 최상위 폴더에서 실행합니다.
+
+```powershell
+git clone https://github.com/jsjsbs7233/jsjsbs7233.github.io.git
+cd jsjsbs7233.github.io
+```
+
+**미리보기 서버** (글을 고치면 브라우저가 자동으로 새로고침됨)
+
+```powershell
+cd site
+hugo server --config hugo.toml,pages.json --theme template --themesDir themes
+```
+
+브라우저에서 http://localhost:1313/ 을 엽니다. 종료는 `Ctrl + C`입니다.
+
+**배포와 같은 방식으로 빌드** (결과는 최상위 `public/` 폴더에 생김)
+
+```powershell
+py .github/pages_build.py --build
+```
+
+마지막 줄에 `빌드 완료`가 나오고 `public/index.html`이 생기면 성공입니다. `public/`은 `.gitignore`로 제외되어 커밋되지 않습니다.
