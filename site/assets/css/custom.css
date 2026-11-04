@@ -1,0 +1,16 @@
+/* 본문 표와 긴 URL이 좁은 화면에서 페이지 전체를 가로로 밀어내지 않게 한다. */
+.content article {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.content article table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.content article img {
+  max-width: 100%;
+  height: auto;
+}
