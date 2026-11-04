@@ -14,3 +14,21 @@
   max-width: 100%;
   height: auto;
 }
+
+/* 홈 화면 바로가기 링크: 터치하기 쉽게 크기와 간격을 둔다. */
+.home-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.home-shortcuts a {
+  display: inline-block;
+  min-width: 12rem;
+  padding: 1rem 2rem;
+  border: 2px solid currentColor;
+  border-radius: 0.6rem;
+  text-align: center;
+}
