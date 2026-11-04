@@ -115,3 +115,13 @@ hugo new content projects/새-활동-이름.md --kind projects
 
 - Actions의 빨간 단계를 열어 오류 메시지를 확인하고, 위의 로컬 빌드 명령으로 같은 오류가 나는지 확인합니다.
 - 처음 설정할 때는 저장소 **Settings → Pages → Build and deployment → Source**가 **GitHub Actions**로 되어 있어야 합니다.
+
+## 출처와 이용 조건
+
+| 자료 | 사용 위치 | 출처 | 이용 조건 |
+|---|---|---|---|
+| Coder 테마 | `site/themes/template/`, 저장소 최상위 원본 파일 | https://github.com/luizdepra/hugo-coder | MIT License (`LICENSE.md` 유지, 사이트 푸터에 고지) |
+| Font Awesome Free 아이콘·글꼴 | 테마에 포함(`site/themes/template/static/fonts/`) | https://fontawesome.com | 아이콘 CC BY 4.0, 글꼴 SIL OFL 1.1 (`LICENSE.txt` 유지) |
+| Hugo | 사이트 빌드 도구 | https://gohugo.io | Apache License 2.0 |
+| 준비 스크립트 `prepare_github_pages.py`, `.github/pages_build.py`, 워크플로 | 배포 구성 | 수업 제공 | 수업 과제용 |
+| 해커톤 시연 화면 `site/static/images/projects/golden-time-map.jpg` | 해커톤 활동 페이지 | 직접 캡처(팀 프로젝트 화면), 아래쪽 일부를 잘라냄 | 직접 제작 |
