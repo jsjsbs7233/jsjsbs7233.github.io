@@ -1,0 +1,18 @@
+/* 좁은 화면 메뉴 체크박스를 화면에서는 숨기되 Tab으로 도달할 수 있게 한다. */
+@media only screen and (max-width: 768px) {
+  .navigation #menu-toggle {
+    visibility: visible;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .navigation #menu-toggle:focus-visible + label {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+  }
+}
