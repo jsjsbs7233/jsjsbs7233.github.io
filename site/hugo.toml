@@ -3,6 +3,8 @@ title = "김우현"
 
 defaultContentLanguage = "ko"
 enableEmoji = true
+# 태그·분류 기능을 쓰지 않으므로 빈 분류 페이지를 만들지 않는다.
+disableKinds = ["taxonomy", "term"]
 
 [pagination]
 pagerSize = 6
@@ -137,12 +139,6 @@ customRemoteJS = []
 # prefetchsrc = ["'self'"]
 # # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 # connectsrc = ["'self'", "https://www.google-analytics.com"]
-
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-author = "authors"
 
 [[params.social]]
 name = "GitHub (jsjsbs7233)"
