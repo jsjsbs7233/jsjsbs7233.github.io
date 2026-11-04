@@ -29,3 +29,23 @@
 ├── THEME_README.md                # 원본 테마의 README
 └── LICENSE.md                     # 원본 테마 라이선스(MIT)
 ```
+
+## 필요한 도구와 버전
+
+| 도구 | 버전 | 용도 |
+|---|---|---|
+| Hugo **extended** | 배포: `0.167.0` (`.github-pages.json`에서 지정) / 로컬 확인: `0.169.0` | 사이트 빌드 |
+| Python | 3.9 이상 (작성자는 3.13.7 사용) | 빌드 스크립트 실행 |
+| Git | 2.x (작성자는 2.54.0 사용) | 버전 관리, push |
+| 운영체제 | Windows 11 (작성 환경), GitHub Actions는 `ubuntu-latest` | |
+
+### 설치 (Windows)
+
+```powershell
+winget install --id Hugo.Hugo.Extended -e
+winget install --id Python.Python.3.13 -e
+winget install --id Git.Git -e
+```
+
+설치 후 새 터미널을 열고 `hugo version`, `py --version`, `git --version`으로 확인합니다.
+Windows에서는 `python` 대신 `py` 명령을 사용합니다.
