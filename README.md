@@ -25,6 +25,7 @@
 │   ├── static/images/             # 아바타, 파비콘, 본문 이미지
 │   ├── archetypes/                # 새 활동 페이지 양식
 │   └── themes/template/           # Coder 테마(원본 보존)
+├── tools/check_site.py            # 빌드 결과 링크·자산 점검 스크립트
 ├── prepare_github_pages.py        # 수업 제공 준비 스크립트
 ├── THEME_README.md                # 원본 테마의 README
 └── LICENSE.md                     # 원본 테마 라이선스(MIT)
@@ -75,6 +76,14 @@ py .github/pages_build.py --build
 ```
 
 마지막 줄에 `빌드 완료`가 나오고 `public/index.html`이 생기면 성공입니다. `public/`은 `.gitignore`로 제외되어 커밋되지 않습니다.
+
+**링크·자산 경로 점검** (빌드 후 실행)
+
+```powershell
+py tools/check_site.py
+```
+
+`public/`의 모든 HTML에서 없는 파일을 가리키는 링크·이미지, localhost·`file:` 주소, `http://` 자산, 빈 `#` 링크, alt 없는 이미지를 찾아 출력합니다. 마지막 줄이 `발견한 문제 0개`이면 통과입니다.
 
 ## 내용을 수정하려면
 
@@ -133,6 +142,6 @@ hugo new content projects/새-활동-이름.md --kind projects
 | 구분 | 대상 |
 |---|---|
 | **본인 제공 정보 + AI가 문장 정리** (본인이 사실 확인·수정) | `site/content/about.md`, `site/content/projects/golden-time.md`, `site/content/projects/portfolio-site.md`, `site/content/contact.md` |
-| **AI 생성** (본인이 화면에서 동작 확인) | `site/static/images/avatar.svg`, 파비콘(`favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`), `site/assets/css/*.css`, `site/layouts/` 아래 재정의 파일, 이 README 초안 |
+| **AI 생성** (본인이 화면에서 동작 확인) | `site/static/images/avatar.svg`, 파비콘(`favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`), `site/assets/css/*.css`, `site/layouts/` 아래 재정의 파일, `site/static/site.webmanifest`, `site/static/images/safari-pinned-tab.svg`, `tools/check_site.py`, 이 README 초안 |
 | **직접 제작** | 해커톤 시연 화면 캡처, 해커톤 프로젝트 자체(팀 작업), 모든 커밋과 배포·검증 작업 |
 | **외부 자료** | Coder 테마, Font Awesome, 수업 제공 스크립트 (위 표 참고) |
