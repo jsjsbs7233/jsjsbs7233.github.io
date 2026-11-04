@@ -32,3 +32,8 @@
   border-radius: 0.6rem;
   text-align: center;
 }
+
+/* 테마의 .centered는 가로 방향 flex라 바로가기 링크가 소개 블록 옆에 붙는다. 세로로 쌓는다. */
+.centered {
+  flex-direction: column;
+}
