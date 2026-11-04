@@ -24,3 +24,7 @@ Thumbs.db
 desktop.ini
 .DS_Store
 *.log
+
+# site 폴더 안에서 hugo를 직접 실행할 때 생기는 빌드 결과물 (위의 !/site/** 규칙보다 뒤에 둬야 적용됨)
+/site/public/
+/site/.hugo_build.lock
