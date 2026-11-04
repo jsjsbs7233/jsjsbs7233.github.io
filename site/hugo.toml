@@ -28,6 +28,8 @@ description = "정보보안을 공부하는 김우현의 개인 포트폴리오"
 keywords = "포트폴리오,정보보안,해커톤,백엔드"
 info = ["정보보안을 공부하고 있습니다", "해커톤 우수상 · 기획/백엔드 담당"]
 avatarURL = "images/avatar.svg"
+# Safari 고정 탭 아이콘 색 (사이트 대표 색)
+mask_icon_color = "#1f6f5c"
 dateFormat = "2006년 1월 2일"
 since = 2026
 # Right To Left, shift content direction for languages such as Arabic
