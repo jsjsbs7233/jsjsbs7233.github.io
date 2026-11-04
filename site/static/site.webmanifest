@@ -1,0 +1,13 @@
+{
+  "name": "김우현 포트폴리오",
+  "short_name": "김우현",
+  "lang": "ko",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#1f6f5c",
+  "icons": [
+    { "src": "/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/images/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
