@@ -1,25 +1,33 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+title = "소개"
+description = "정보보안을 공부하는 김우현을 소개합니다"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+안녕하세요, **김우현**입니다. 정보보안에 관심을 두고 공부하고 있으며, 해커톤에서 팀 프로젝트의 기획과 백엔드를 맡아 실제 서비스를 배포해 본 경험이 있습니다.
 
-Hugo makes use of a variety of open source projects including:
+## 관심 분야: 정보보안
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+앞으로 소프트웨어와 데이터가 늘어날수록 이를 지키는 보안 분야의 전망이 밝다고 생각해 관심을 갖게 되었습니다.
+해커톤에서 외부 API 키를 다루면서, 키를 코드에 직접 넣지 않고 환경 변수 파일(`.env.local`)로 분리하고 Git에 올라가지 않게 관리해야 한다는 점을 직접 겪은 것도 보안을 더 공부하고 싶어진 계기입니다.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+## 학습 목표와 다음 행동
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+**목표:** 웹 서비스에서 자주 발생하는 보안 취약점(SQL 인젝션, XSS 등)이 왜 생기는지 이해하고, 내가 만든 코드에서 직접 찾아 고칠 수 있게 되기
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+**다음 행동**
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+| 순서 | 기간 | 할 일 | 확인 방법 |
+|---|---|---|---|
+| 1 | 2026년 12월 | OWASP Top 10 공식 문서를 읽고 항목마다 원인과 예방법을 한 문단씩 정리 | 10개 항목 정리 노트 완성 |
+| 2 | 2026년 1월 | 워게임 사이트(Dreamhack 등)의 웹 해킹 입문 문제를 매주 2문제 이상 풀기 | 문제별 풀이 과정과 배운 점 기록 |
+| 3 | 2027년 2월 | 해커톤 프로젝트 코드를 다시 보며 API 키 관리·입력값 검증처럼 정리한 항목에 해당하는 부분 점검 | 발견한 문제와 개선안을 이 사이트 활동 페이지에 정리 |
+
+## 사용해 본 기술과 사례
+
+| 기술·도구 | 실제로 사용한 곳 |
+|---|---|
+| 외부 API 연동 (Tmap 경로안내, 건강보험심사평가원 병원정보) | 해커톤 프로젝트에서 실시간 교통 기준 소요시간 계산과 소아과 목록 수집을 백엔드에서 구현 |
+| Git · GitHub | 해커톤 팀 저장소에서 브랜치와 Pull Request로 협업, 이 사이트도 Git으로 관리하며 배포 |
+| Hugo · GitHub Actions | 이 포트폴리오 사이트를 만들고 main 브랜치에 push하면 자동 배포되도록 구성 |
+
+자세한 내용은 [활동](/projects/) 페이지에서 볼 수 있습니다.
