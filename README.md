@@ -125,3 +125,14 @@ hugo new content projects/새-활동-이름.md --kind projects
 | Hugo | 사이트 빌드 도구 | https://gohugo.io | Apache License 2.0 |
 | 준비 스크립트 `prepare_github_pages.py`, `.github/pages_build.py`, 워크플로 | 배포 구성 | 수업 제공 | 수업 과제용 |
 | 해커톤 시연 화면 `site/static/images/projects/golden-time-map.jpg` | 해커톤 활동 페이지 | 직접 캡처(팀 프로젝트 화면), 아래쪽 일부를 잘라냄 | 직접 제작 |
+
+## 직접 제작과 AI 활용 구분
+
+이 사이트는 AI 코딩 도구(Claude Code)의 도움을 받아 만들었습니다. 모든 결과는 직접 확인한 뒤 커밋했습니다.
+
+| 구분 | 대상 |
+|---|---|
+| **본인 제공 정보 + AI가 문장 정리** (본인이 사실 확인·수정) | `site/content/about.md`, `site/content/projects/golden-time.md`, `site/content/projects/portfolio-site.md`, `site/content/contact.md` |
+| **AI 생성** (본인이 화면에서 동작 확인) | `site/static/images/avatar.svg`, 파비콘(`favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`), `site/assets/css/*.css`, `site/layouts/` 아래 재정의 파일, 이 README 초안 |
+| **직접 제작** | 해커톤 시연 화면 캡처, 해커톤 프로젝트 자체(팀 작업), 모든 커밋과 배포·검증 작업 |
+| **외부 자료** | Coder 테마, Font Awesome, 수업 제공 스크립트 (위 표 참고) |
