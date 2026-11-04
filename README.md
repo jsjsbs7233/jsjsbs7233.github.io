@@ -75,3 +75,27 @@ py .github/pages_build.py --build
 ```
 
 마지막 줄에 `빌드 완료`가 나오고 `public/index.html`이 생기면 성공입니다. `public/`은 `.gitignore`로 제외되어 커밋되지 않습니다.
+
+## 내용을 수정하려면
+
+| 바꾸고 싶은 것 | 파일 |
+|---|---|
+| 이름, 홈 화면 소개 문구, 아바타 경로 | `site/hugo.toml`의 `[params]` (`author`, `info`, `avatarURL`) |
+| 상단 메뉴 | `site/hugo.toml`의 `[[languages.ko.menu.main]]` |
+| 홈 화면 GitHub 아이콘 링크 | `site/hugo.toml`의 `[[params.social]]` |
+| 소개 페이지 | `site/content/about.md` |
+| 활동 목록 안내 문구 | `site/content/projects/_index.md` |
+| 활동 상세 페이지 | `site/content/projects/*.md` |
+| 연락처 페이지 | `site/content/contact.md` |
+| 이미지 | `site/static/images/` (글에서는 `/images/파일명`으로 참조) |
+| 직접 추가한 스타일 | `site/assets/css/custom.css`, `site/assets/css/a11y.css` |
+| 테마 화면을 바꾼 부분 | `site/layouts/` (테마의 같은 경로 파일을 덮어씀) |
+
+**새 활동 페이지 추가**
+
+```powershell
+cd site
+hugo new content projects/새-활동-이름.md --kind projects
+```
+
+생성된 파일의 `draft = true`를 `false`로 바꿔야 사이트에 표시됩니다.
