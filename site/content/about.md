@@ -31,3 +31,5 @@ description = "정보보안을 공부하는 김우현을 소개합니다"
 | Hugo · GitHub Actions | 이 포트폴리오 사이트를 만들고 main 브랜치에 push하면 자동 배포되도록 구성 |
 
 자세한 내용은 [활동](/projects/) 페이지에서 볼 수 있습니다.
+
+[연락처](/contact/) · [처음 화면으로](/)
