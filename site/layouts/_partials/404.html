@@ -1,0 +1,12 @@
+<section class="container centered">
+  <div class="error">
+    <h1>404</h1>
+    <h2>{{ i18n "page_not_found" }}</h2>
+    <p>{{ i18n "page_does_not_exist" }} 주소가 바뀌었거나 삭제된 페이지일 수 있습니다.</p>
+    <p>
+      <a href="{{ "" | relLangURL }}">처음 화면</a> ·
+      <a href="{{ "about/" | relLangURL }}">소개</a> ·
+      <a href="{{ "projects/" | relLangURL }}">활동</a>
+    </p>
+  </div>
+</section>
